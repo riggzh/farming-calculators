@@ -5,7 +5,7 @@
     <meta name="author" content="tknow">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Reductions Calculator - Farming Calculators</title>
+    <title>收益转换计算器 - “伐木”计算器</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" rel="stylesheet">
     <link href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css"  rel="stylesheet">
@@ -29,8 +29,8 @@
         <!-- Header -->
         <nav class="navbar is-dark">
     <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-            Farming Calculators
+        <a class="navbar-item" href="index.html">
+            “伐木”计算器
         </a>
         <div class="navbar-burger burger" data-target="Navbar">
             <span></span>
@@ -42,19 +42,19 @@
     <div id="Navbar" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item" href="relics.html">
-                Relics
+                圣物
             </a>
             <a class="navbar-item" href="artifacts.html">
-                Artifacts
+                神器
             </a>
             <a class="navbar-item" href="bos.html">
-                BoS
+                “暗影之书”
             </a>
             <a class="navbar-item" href="next-artifact.html">
-                Next Artifact
+                挖掘神器
             </a>
             <a class="navbar-item is-active" href="reductions.html">
-                Reductions
+                收益转换
             </a>
         </div>
 
@@ -95,20 +95,20 @@
                     <div class="column is-one-third-widescreen is-two-thirds-desktop is-full-mobile">
                         
 <section class="panel is-dark">
-    <p class="panel-heading">Reductions Calculator</p>
+    <p class="panel-heading">收益转换计算器</p>
     <div class="panel-block is-block">
         <div class="field">
-            <label for="dmg-source" class="label">Damage Source</label>
+            <label for="dmg-source" class="label">伤害来源</label>
             <div class="control has-icons-left">
                 <div class="select is-medium is-fullwidth">
                     <select id="dmg-source">
-                        <option value="">Select Damage Source</option>
-                        <option value="xtap">xTap</option>
-                        <option value="xhero">xHero</option>
-                        <option value="xds">xDS</option>
-                        <option value="xwc">xWC</option>
-                        <option value="xfs">xFS</option>
-                        <option value="sad">SAD</option>
+                        <option value="">选择伤害来源</option>
+                        <option value="xtap">x点击</option>
+                        <option value="xhero">x英雄</option>
+                        <option value="xds">x致命打击</option>
+                        <option value="xwc">x战壕</option>
+                        <option value="xfs">x火焰之剑</option>
+                        <option value="sad">神器伤害</option>
                     </select>
                 </div>
                 <span class="icon is-small is-left">
@@ -118,7 +118,7 @@
         </div>
 
         <div class="field">
-            <label for="cur-multi" class="label">Current Damage Source Multiplier</label>
+            <label for="cur-multi" class="label">当前伤害倍数</label>
             <div class="control has-icons-left">
                 <input class="input is-medium" min="0" max="" steps="any" type="number" id="cur-multi" onclick="this.select();">
                 <span class="icon is-left">
@@ -128,7 +128,7 @@
         </div>
 
         <div class="field">
-            <label for="new-multi" class="label">New Damage Source Multiplier</label>
+            <label for="new-multi" class="label">新伤害倍数</label>
             <div class="control has-icons-left">
                 <input class="input is-medium" min="0" max="" steps="any" type="number" id="new-multi" onclick="this.select();">
                 <span class="icon is-left">
@@ -138,17 +138,17 @@
         </div>
 
         <div class="field">
-            <label for="dmg-type" class="label">Damage Type</label>
+            <label for="dmg-type" class="label">伤害类型</label>
             <div class="control has-icons-left">
                 <div class="select is-medium is-fullwidth">
                     <select id="dmg-type">
-                        <option value="">Select Damage Type</option>
-                        <option value="hero">Hero</option>
-                        <option value="tap">Tap</option>
-                        <option value="pet">Pet</option>
-                        <option value="sc">SC</option>
-                        <option value="hs">HS</option>
-                        <option value="ship">Ship</option>
+                        <option value="">选择伤害类型</option>
+                        <option value="hero">英雄</option>
+                        <option value="tap">点击</option>
+                        <option value="pet">宠物</option>
+                        <option value="sc">影分身术</option>
+                        <option value="hs">天堂圣击</option>
+                        <option value="ship">部落战舰</option>
                     </select>
                 </div>
                 <span class="icon is-small is-left">
@@ -159,7 +159,7 @@
 
         <div class="field">
             <div class="control">
-                <a class="button is-fullwidth is-dark is-medium is-size-6-touch" id="btn-calc">Calculate Damage Type Increase</a>
+                <a class="button is-fullwidth is-dark is-medium is-size-6-touch" id="btn-calc">计算伤害类型收益</a>
             </div>
         </div>
     </div>
@@ -168,13 +168,13 @@
           <nav class="level is-mobile">
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="heading">Damage Type Increase</p>
+                    <p class="heading">伤害类型收益</p>
                     <p class="title is-size-4" id="damage-increase"></p>
                 </div>
             </div>
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="heading">Stage Increase</p>
+                    <p class="heading">层数收益</p>
                     <p class="title is-size-4" id="stage-increase"></p>
                 </div>
             </div>
@@ -192,7 +192,10 @@
     <div class="container">
         <div class="content has-text-centered">
             <p>
-                Reductions Calculator <strong>1.3</strong> for TT2 <strong>2.6.2</strong> made with <span class="icon is-small"><i class="mdi mdi-heart"></i></span> by tknow
+                收益转换计算器 <strong>1.3</strong> 适配 点杀泰坦2 <strong>2.6.2</strong> 汉化版 by RiggZh
+            </p>
+            <p>
+                <a href="http://farming-calculators.tt2.dx.am">点击此处跳转英文原版</a> 感谢原作者 tknow
             </p>
         </div>
     </div>

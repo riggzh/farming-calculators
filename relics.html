@@ -5,7 +5,7 @@
     <meta name="author" content="tknow">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Relics Calculator - Farming Calculators</title>
+    <title>圣物计算器 - “伐木”计算器</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" rel="stylesheet">
     <link href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css"  rel="stylesheet">
@@ -29,8 +29,8 @@
         <!-- Header -->
         <nav class="navbar is-dark">
     <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-            Farming Calculators
+        <a class="navbar-item" href="index.html">
+            “伐木”计算器
         </a>
         <div class="navbar-burger burger" data-target="Navbar">
             <span></span>
@@ -42,19 +42,19 @@
     <div id="Navbar" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item is-active" href="relics.html">
-                Relics
+                圣物
             </a>
             <a class="navbar-item" href="artifacts.html">
-                Artifacts
+                神器
             </a>
             <a class="navbar-item" href="bos.html">
-                BoS
+                “暗影之书”
             </a>
             <a class="navbar-item" href="next-artifact.html">
-                Next Artifact
+                挖掘神器
             </a>
             <a class="navbar-item" href="reductions.html">
-                Reductions
+                收益转换
             </a>
         </div>
 
@@ -95,10 +95,10 @@
                     <div class="column is-one-third-widescreen is-two-thirds-desktop is-full-mobile">
                         
 <section class="panel">
-    <p class="panel-heading">Relics Calculator</p>
+    <p class="panel-heading">圣物计算器</p>
 
     <div class="panel-block is-block">
-        <label for="stage" class="label">Stage</label>
+        <label for="stage" class="label">层数</label>
         <div class="field">
             <div class="control has-icons-left">
                 <input class="input is-medium" min="100" max="" steps="1" type="number" id="stage" onclick="this.select();">
@@ -108,7 +108,7 @@
             </div>
         </div>
 
-        <label for="bos" class="label">BoS Level</label>
+        <label for="bos" class="label">“暗影之书”等级</label>
         <div class="field has-addons">
             <div class="control is-expanded has-icons-left">
                 <input class="input is-medium" min="0" max="" steps="any" type="number" id="bos" onclick="this.select();">
@@ -205,18 +205,18 @@
         </div>
 
         <div class="field">
-            <label class="label">Mythic Equipment Sets</label>
+            <label class="label">神话套装</label>
             <div class="columns">
                 <div class="column">
                     <label class="checkbox">
                         <input type="checkbox" id="set-1" value="1.5">
-                        Dark Predator
+                        黑暗捕食者
                     </label>
                 </div>
                 <div class="column">
                     <label class="checkbox">
                         <input type="checkbox" id="set-2" value="1.5">
-                        Ancient Warrior
+                        古代的战士
                     </label>
                 </div>
             </div>
@@ -227,7 +227,7 @@
         <nav class="level">
             <div class="level-item has-text-centered bosinfo">
                 <div>
-                    <p class="heading">Base Relics</p>
+                    <p class="heading">基础圣物</p>
                     <p class="title is-size-4 is-size-5-mobile" id="base-result"></p>
                 </div>
             </div>
@@ -239,7 +239,7 @@
             </div>
             <div class="level-item has-text-centered bosinfo">
                 <div>
-                    <p class="heading">BoS Relics</p>
+                    <p class="heading">“暗影之书”圣物</p>
                     <p class="title is-size-4 is-size-5-mobile" id="bos-result"></p>
                 </div>
             </div>
@@ -251,7 +251,7 @@
             </div>
             <div class="level-item has-text-centered">
                 <div>
-                    <p class="heading">Total Relics</p>
+                    <p class="heading">获得圣物</p>
                     <p class="title is-size-4 is-size-5-mobile" id="total-result" style="border-bottom: double 8px;"></p>
                 </div>
             </div>
@@ -269,7 +269,10 @@
     <div class="container">
         <div class="content has-text-centered">
             <p>
-                Relics Calculator <strong>2.2</strong> for TT2 <strong>2.6.2</strong> made with <span class="icon is-small"><i class="mdi mdi-heart"></i></span> by tknow
+                圣物计算器 <strong>2.2</strong> 适配 点杀泰坦2 <strong>2.6.2</strong> 汉化版 by RiggZh
+            </p>
+            <p>
+                <a href="http://farming-calculators.tt2.dx.am">点击此处跳转英文原版</a> 感谢原作者 tknow
             </p>
         </div>
     </div>
