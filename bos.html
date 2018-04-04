@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="tknow">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BoS Prestige Calculator - Farming Calculators</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css"  rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/main.min.css?v=1.5" inline>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107717049-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107717049-3');
+    </script>
+    
+</head>
+<body>
+    <!-- Site -->
+    <div class="site">
+
+        <!-- Header -->
+        <nav class="navbar is-dark">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            Farming Calculators
+        </a>
+        <div class="navbar-burger burger" data-target="Navbar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="Navbar" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="relics.html">
+                Relics
+            </a>
+            <a class="navbar-item" href="artifacts.html">
+                Artifacts
+            </a>
+            <a class="navbar-item is-active" href="bos.html">
+                BoS
+            </a>
+            <a class="navbar-item" href="next-artifact.html">
+                Next Artifact
+            </a>
+            <a class="navbar-item" href="reductions.html">
+                Reductions
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="button" target="_blank" href="https://www.reddit.com/u/tknow85/">
+                            <span class="icon">
+                                <i class="mdi mdi-reddit"></i>
+                            </span>
+                            <span>
+                                /u/tknow85
+                            </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button" href="https://discordapp.com/">
+                            <span class="icon">
+                                <i class="mdi mdi-discord"></i>
+                            </span>
+                            <span>tknow#1925</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+        <!-- Site Content -->
+        <main class="site-content">
+
+            <!-- Section -->
+            <section class="section">
+                <div class="columns is-centered">
+                    <div class="column is-one-third-widescreen is-two-thirds-desktop is-full-mobile">
+                        
+<section class="panel is-dark">
+    <p class="panel-heading">BoS Prestige Calculator</p>
+
+    <div class="panel-block is-block">
+    <label for="stage" class="label">Farming Stage</label>
+    <div class="field">
+        <div class="control has-icons-left">
+            <input class="input is-medium" min="100" max="" steps="1" type="number" id="stage" onclick="this.select();">
+            <span class="icon is-left">
+                <i class="mdi mdi-star"></i>
+            </span>
+        </div>
+    </div>
+
+    <label for="bos-from" class="label">BoS Level</label>
+    <div class="field has-addons">
+        <div class="control is-expanded has-icons-left">
+            <input class="input is-medium" min="0" max="" steps="any" type="number" id="bos" onclick="this.select();">
+            <span class="icon is-left">
+                <i class="mdi mdi-book-open-variant"></i>
+            </span>
+        </div>
+        <div class="control">
+            <span class="select is-medium">
+                
+                <select id="bos-unit">
+    <option value="-">-</option>
+    <option value="k">k</option>
+    <option value="M">M</option>
+    <option value="B">B</option>
+    <option value="T">T</option>
+    
+    <option value="e15">e15</option>
+    
+    <option value="e16">e16</option>
+    
+    <option value="e17">e17</option>
+    
+    <option value="e18">e18</option>
+    
+    <option value="e19">e19</option>
+    
+    <option value="e20">e20</option>
+    
+    <option value="e21">e21</option>
+    
+    <option value="e22">e22</option>
+    
+    <option value="e23">e23</option>
+    
+    <option value="e24">e24</option>
+    
+    <option value="e25">e25</option>
+    
+    <option value="e26">e26</option>
+    
+    <option value="e27">e27</option>
+    
+    <option value="e28">e28</option>
+    
+    <option value="e29">e29</option>
+    
+    <option value="e30">e30</option>
+    
+    <option value="e31">e31</option>
+    
+    <option value="e32">e32</option>
+    
+    <option value="e33">e33</option>
+    
+    <option value="e34">e34</option>
+    
+    <option value="e35">e35</option>
+    
+    <option value="e36">e36</option>
+    
+    <option value="e37">e37</option>
+    
+    <option value="e38">e38</option>
+    
+    <option value="e39">e39</option>
+    
+    <option value="e40">e40</option>
+    
+    <option value="e41">e41</option>
+    
+    <option value="e42">e42</option>
+    
+    <option value="e43">e43</option>
+    
+    <option value="e44">e44</option>
+    
+    <option value="e45">e45</option>
+    
+    <option value="e46">e46</option>
+    
+    <option value="e47">e47</option>
+    
+    <option value="e48">e48</option>
+    
+    <option value="e49">e49</option>
+    
+    <option value="e50">e50</option>
+    
+</select>
+
+            </span>
+        </div>
+    </div>
+
+
+    <label for="relics" class="label">Current Relics</label>
+    <div class="field has-addons">
+        <div class="control is-expanded">
+            <input class="input is-medium" min="0" max="" steps="any" type="number" id="relics" onclick="this.select();">
+        </div>
+        <div class="control">
+            <span class="select is-medium">
+                
+                <select id="relics-unit">
+    <option value="-">-</option>
+    <option value="k">k</option>
+    <option value="M">M</option>
+    <option value="B">B</option>
+    <option value="T">T</option>
+    
+    <option value="e15">e15</option>
+    
+    <option value="e16">e16</option>
+    
+    <option value="e17">e17</option>
+    
+    <option value="e18">e18</option>
+    
+    <option value="e19">e19</option>
+    
+    <option value="e20">e20</option>
+    
+    <option value="e21">e21</option>
+    
+    <option value="e22">e22</option>
+    
+    <option value="e23">e23</option>
+    
+    <option value="e24">e24</option>
+    
+    <option value="e25">e25</option>
+    
+    <option value="e26">e26</option>
+    
+    <option value="e27">e27</option>
+    
+    <option value="e28">e28</option>
+    
+    <option value="e29">e29</option>
+    
+    <option value="e30">e30</option>
+    
+    <option value="e31">e31</option>
+    
+    <option value="e32">e32</option>
+    
+    <option value="e33">e33</option>
+    
+    <option value="e34">e34</option>
+    
+    <option value="e35">e35</option>
+    
+    <option value="e36">e36</option>
+    
+    <option value="e37">e37</option>
+    
+    <option value="e38">e38</option>
+    
+    <option value="e39">e39</option>
+    
+    <option value="e40">e40</option>
+    
+    <option value="e41">e41</option>
+    
+    <option value="e42">e42</option>
+    
+    <option value="e43">e43</option>
+    
+    <option value="e44">e44</option>
+    
+    <option value="e45">e45</option>
+    
+    <option value="e46">e46</option>
+    
+    <option value="e47">e47</option>
+    
+    <option value="e48">e48</option>
+    
+    <option value="e49">e49</option>
+    
+    <option value="e50">e50</option>
+    
+</select>
+
+            </span>
+        </div>
+    </div>
+
+    <label class="label">Mythic Equipment Sets</label>
+    <div class="field">
+        <div class="columns">
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" id="set-1" value="1.5">
+                    Dark Predator
+                </label>
+            </div>
+            <div class="column">
+                <label class="checkbox">
+                    <input type="checkbox" id="set-2" value="1.5">
+                    Ancient Warrior
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="panel-block is-block">
+        <label for="bos-to" class="label">BoS Level Goal</label>
+        <div class="field has-addons">
+            <div class="control is-expanded has-icons-left">
+                <input class="input is-medium" min="0" max="" steps="any" type="number" id="bos-to" onclick="this.select();">
+                <span class="icon is-left">
+                    <i class="mdi mdi-book-open-variant"></i>
+                </span>
+            </div>
+            <div class="control">
+                <span class="select is-medium">
+                    
+                     <select id="bos-to-unit">
+    <option value="-">-</option>
+    <option value="k">k</option>
+    <option value="M">M</option>
+    <option value="B">B</option>
+    <option value="T">T</option>
+    
+    <option value="e15">e15</option>
+    
+    <option value="e16">e16</option>
+    
+    <option value="e17">e17</option>
+    
+    <option value="e18">e18</option>
+    
+    <option value="e19">e19</option>
+    
+    <option value="e20">e20</option>
+    
+    <option value="e21">e21</option>
+    
+    <option value="e22">e22</option>
+    
+    <option value="e23">e23</option>
+    
+    <option value="e24">e24</option>
+    
+    <option value="e25">e25</option>
+    
+    <option value="e26">e26</option>
+    
+    <option value="e27">e27</option>
+    
+    <option value="e28">e28</option>
+    
+    <option value="e29">e29</option>
+    
+    <option value="e30">e30</option>
+    
+    <option value="e31">e31</option>
+    
+    <option value="e32">e32</option>
+    
+    <option value="e33">e33</option>
+    
+    <option value="e34">e34</option>
+    
+    <option value="e35">e35</option>
+    
+    <option value="e36">e36</option>
+    
+    <option value="e37">e37</option>
+    
+    <option value="e38">e38</option>
+    
+    <option value="e39">e39</option>
+    
+    <option value="e40">e40</option>
+    
+    <option value="e41">e41</option>
+    
+    <option value="e42">e42</option>
+    
+    <option value="e43">e43</option>
+    
+    <option value="e44">e44</option>
+    
+    <option value="e45">e45</option>
+    
+    <option value="e46">e46</option>
+    
+    <option value="e47">e47</option>
+    
+    <option value="e48">e48</option>
+    
+    <option value="e49">e49</option>
+    
+    <option value="e50">e50</option>
+    
+</select>
+
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="control">
+                <a class="button is-fullwidth is-dark is-medium is-size-6-touch" id="btn-calc">Calculate Prestige Amount</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-block is-block">
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Prestiges</p>
+                    <p class="title is-size-4" id="prestige-result"></p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Relics</p>
+                    <p class="title is-size-4" id="total-relics"></p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                BoS Prestige Calculator <strong>1.7</strong> for TT2 <strong>2.6.2</strong> made with <span class="icon is-small"><i class="mdi mdi-heart"></i></span> by tknow
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script src="static/js/app.min.js?v=1.5" inline></script>
+
+    
+    
+    
+    <script src="static/js/bos.min.js?v=1.7" inline></script>
+    
+    
+    
+</body>
+</html>

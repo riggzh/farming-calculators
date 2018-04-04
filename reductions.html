@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="tknow">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Reductions Calculator - Farming Calculators</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css"  rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/main.min.css?v=1.5" inline>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107717049-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107717049-3');
+    </script>
+    
+</head>
+<body>
+    <!-- Site -->
+    <div class="site">
+
+        <!-- Header -->
+        <nav class="navbar is-dark">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            Farming Calculators
+        </a>
+        <div class="navbar-burger burger" data-target="Navbar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="Navbar" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="relics.html">
+                Relics
+            </a>
+            <a class="navbar-item" href="artifacts.html">
+                Artifacts
+            </a>
+            <a class="navbar-item" href="bos.html">
+                BoS
+            </a>
+            <a class="navbar-item" href="next-artifact.html">
+                Next Artifact
+            </a>
+            <a class="navbar-item is-active" href="reductions.html">
+                Reductions
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="button" target="_blank" href="https://www.reddit.com/u/tknow85/">
+                            <span class="icon">
+                                <i class="mdi mdi-reddit"></i>
+                            </span>
+                            <span>
+                                /u/tknow85
+                            </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button" href="https://discordapp.com/">
+                            <span class="icon">
+                                <i class="mdi mdi-discord"></i>
+                            </span>
+                            <span>tknow#1925</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+        <!-- Site Content -->
+        <main class="site-content">
+
+            <!-- Section -->
+            <section class="section">
+                <div class="columns is-centered">
+                    <div class="column is-one-third-widescreen is-two-thirds-desktop is-full-mobile">
+                        
+<section class="panel is-dark">
+    <p class="panel-heading">Reductions Calculator</p>
+    <div class="panel-block is-block">
+        <div class="field">
+            <label for="dmg-source" class="label">Damage Source</label>
+            <div class="control has-icons-left">
+                <div class="select is-medium is-fullwidth">
+                    <select id="dmg-source">
+                        <option value="">Select Damage Source</option>
+                        <option value="xtap">xTap</option>
+                        <option value="xhero">xHero</option>
+                        <option value="xds">xDS</option>
+                        <option value="xwc">xWC</option>
+                        <option value="xfs">xFS</option>
+                        <option value="sad">SAD</option>
+                    </select>
+                </div>
+                <span class="icon is-small is-left">
+                    <i class="mdi mdi-sword"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="cur-multi" class="label">Current Damage Source Multiplier</label>
+            <div class="control has-icons-left">
+                <input class="input is-medium" min="0" max="" steps="any" type="number" id="cur-multi" onclick="this.select();">
+                <span class="icon is-left">
+                    <i class="mdi mdi-sword-cross"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="new-multi" class="label">New Damage Source Multiplier</label>
+            <div class="control has-icons-left">
+                <input class="input is-medium" min="0" max="" steps="any" type="number" id="new-multi" onclick="this.select();">
+                <span class="icon is-left">
+                    <i class="mdi mdi-sword-cross"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="dmg-type" class="label">Damage Type</label>
+            <div class="control has-icons-left">
+                <div class="select is-medium is-fullwidth">
+                    <select id="dmg-type">
+                        <option value="">Select Damage Type</option>
+                        <option value="hero">Hero</option>
+                        <option value="tap">Tap</option>
+                        <option value="pet">Pet</option>
+                        <option value="sc">SC</option>
+                        <option value="hs">HS</option>
+                        <option value="ship">Ship</option>
+                    </select>
+                </div>
+                <span class="icon is-small is-left">
+                    <i class="mdi mdi-sword"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="control">
+                <a class="button is-fullwidth is-dark is-medium is-size-6-touch" id="btn-calc">Calculate Damage Type Increase</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-block is-block">
+          <nav class="level is-mobile">
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Damage Type Increase</p>
+                    <p class="title is-size-4" id="damage-increase"></p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Stage Increase</p>
+                    <p class="title is-size-4" id="stage-increase"></p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                Reductions Calculator <strong>1.3</strong> for TT2 <strong>2.6.2</strong> made with <span class="icon is-small"><i class="mdi mdi-heart"></i></span> by tknow
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script src="static/js/app.min.js?v=1.5" inline></script>
+
+    
+    
+    
+    
+    
+    <script src="static/js/reductions.min.js?v=1.3" inline></script>
+    
+</body>
+</html>
